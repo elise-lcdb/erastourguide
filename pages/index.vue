@@ -52,8 +52,6 @@
     </div>
 </template>
 <script setup lang="ts">
-import moment from 'moment';
-import 'moment/min/locales'
 const { locale } = useI18n();
 
 
@@ -205,9 +203,6 @@ const allDates = [
     {date: '2024-11-22', location: 'Toronto 🇨🇦', venue: "Rogers Centre", country: "Canada", continent: "North America"},
     {date: '2024-11-23', location: 'Toronto 🇨🇦', venue: "Rogers Centre", country: "Canada", continent: "North America"},
 ]  
-const today  = computed(() => {
-    return moment().startOf('day');
-})
 const filter = ref('Upcoming' as String)
 const currentDate = computed(() => {
     return new Date()
