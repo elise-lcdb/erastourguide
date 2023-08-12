@@ -3,7 +3,7 @@
         <p>{{$t('footer.description')}}</p>
         <div class="flex_row gap_16">
             <a href="https://www.tiktok.com/@elise.codes"><icon name="TiktokLogo" size="24"/></a>
-            <a><icon name="GithubLogo" size="24"/></a>
+            <a href="https://github.com/elise-lcdb/erastourguide"><icon name="GithubLogo" size="24"/></a>
         </div>
     </div>
 </template>
