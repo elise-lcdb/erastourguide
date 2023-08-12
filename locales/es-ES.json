@@ -1,0 +1,39 @@
+{
+    "events":{
+        "title": "Eventos",
+        "filters":{
+            "all": "Todos",
+            "upcoming": "Próximamente",
+            "northAmerica": "Norteamérica",
+            "southAmerica": "América del Sur",
+            "europe": "Europa",
+            "asia": "Asia",
+            "oceania": "Oceanía"
+        },
+        "countdown":{
+            "completed": "Completado",
+            "day": "Día",
+            "days": "Días",
+            "today": "Hoy"
+        }
+    },
+    "chants":{
+        "title": "Cantos",
+        "filters": {
+            "previous": "Anterior",
+            "next": "Siguiente"
+        }
+    },
+    "bracelets":{
+        "title": "Pulseras"
+    },
+    "banners":{
+        "fanMade":{
+            "description": "Este es un sitio web no oficial hecho por fans, para fans. Esperamos que lo disfrutes. Si lo hace, ofrézcanos una galleta 😉",
+            "offerCookie": "Ofrecer una galleta 🍪"
+        }
+    },
+    "footer":{
+        "description": "Programado por Elise y diseñado por mi cariñosa novia"
+    }
+}

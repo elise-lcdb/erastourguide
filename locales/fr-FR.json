@@ -1,0 +1,39 @@
+{
+    "events":{
+        "title": "Evénements",
+        "filters":{
+            "all": "Tous",
+            "upcoming": "À venir",
+            "northAmerica": "Amérique du Nord",
+            "southAmerica": "Amérique du Sud",
+            "europe": "Europe",
+            "asia": "Asie",
+            "oceania": "Océanie"
+        },
+        "countdown":{
+            "completed": "Terminé",
+            "day": "Jour",
+            "days": "Jours",
+            "today": "Aujourd'hui"
+        }
+    },
+    "chants":{
+        "title": "Chants",
+        "filters": {
+            "previous": "Précédent",
+            "next": "Suivant"
+        }
+    },
+    "bracelets":{
+        "title": "Bracelets"
+    },
+    "banners":{
+        "fanMade":{
+            "description": "Ce site est un site non officiel fait par des fans, pour des fans. Nous espérons qu'il vous plaira ! Si c'est le cas, offrez-nous un cookie  😉",
+            "offerCookie": "Offrir un cookie 🍪"
+        }
+    },
+    "footer":{
+        "description": "Développée par Elise et conçue par ma chère copine"
+    }
+}

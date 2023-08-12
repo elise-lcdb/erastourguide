@@ -1,0 +1,295 @@
+/************* FONT IMPORTS *************/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/************* RESETTING CSS *************/
+body{
+    margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    margin: 0;
+}
+/************* GENERAL CSS *************/
+h1, h2, h3, h4, h5, h6, p, a, quote, li, button, select{
+    font-family: 'Inter', sans-serif;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    &.wrap{
+        flex-wrap: wrap;
+    }
+    &.v_center{
+        align-items: center;
+    }
+    &.h_center{
+        justify-content: center;
+    }
+    &.h_right{
+        justify-content: end;
+    }
+}
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+.gap_4{
+    gap: 4px;
+}
+.gap_8{
+    gap: 8px;
+}
+.gap_10{
+    gap: 10px;
+}
+.gap_12{
+    gap: 12px;
+}
+.gap_16{
+    gap: 16px;
+}
+.gap_20{
+    gap: 20px;
+}
+.gap_24{
+    gap: 24px;
+}
+.gap_40{
+    gap: 40px;
+}
+.gap_64{
+    gap: 64px;
+}
+
+.page_title{
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    line-height: 54px; 
+}
+.event_filter_button{
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 21px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.32px;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+/************* SETTING THEME VARIABLES *************/
+:root{
+    //MIDNIGHTS
+    --midnights-light-background: #EAE8E3;
+    --midnights-gradient: linear-gradient(90deg, #4C5F9E 0%, #5D9FC2 100%);
+    --midnights-primary: #4C5F9E;
+    --midnights-secondary: #5D9FC2;
+    --midnights-primary-10: rgba(76, 95, 158, 0.10);
+
+    //SPEAK NOW (TAYLOR'S VERSION)
+    --speak-now-tv-light-background: #F2E9EB;
+    --speak-now-tv-gradient: linear-gradient(90deg, #653870 0%, #AC64B3 100%);
+    --speak-now-tv-primary: #653870;
+    --speak-now-tv-secondary: #AC64B3;
+    --speak-now-tv-primary-10: rgba(101, 56, 112, 0.10);
+
+    //1989 (TAYLOR'S VERSION)
+    --1989-tv-light-background: #DAD3C6; 
+    --1989-tv-gradient: linear-gradient(90deg, #839DB6 0%, #9AB5CA 100%);
+    --1989-tv-primary: #3F3E3E;
+    --1989-tv-secondary: #839DB6;
+    --1989-tv-primary-10: rgba(131, 157, 182, 0.3);
+}
+
+/************* MIDNIGHTS THEME *************/
+.midnights_theme{
+    //BACKGROUND COLOR
+    background: var(--midnights-light-background);
+
+    h1, h2, h3, h4, h5, h6, p, select, button{
+        color: var(--midnights-primary);
+    }
+    svg{
+        color: var(--midnights-primary) !important;
+    }
+
+    .fan_made_banner, .footer_container{
+        background: var(--midnights-primary-10);
+
+        a{
+            color: var(--midnights-secondary);
+        }
+    }
+    .navbar_container{
+        background: var(--midnights-light-background);
+
+        .logo h1{
+            background: var(--midnights-gradient, linear-gradient(90deg, #4C5F9E 0%, #5D9FC2 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .link{
+            color: var(--midnights-primary);
+
+            &.router-link-active{
+                color: var(--midnights-secondary);
+            }
+        }
+    }
+
+    .page_title{
+        background: var(--midnights-gradient, linear-gradient(90deg, #4C5F9E 0%, #5D9FC2 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+    .event_filter_button{
+        border: 1px solid var(--midnights-primary, #4C5F9E);
+        color: var(--midnights-primary, #4C5F9E);
+
+        &.is-active{
+            background: var(--midnights-gradient, linear-gradient(90deg, #4C5F9E 0%, #5D9FC2 100%));
+            color: #FFFFFF;
+        }
+
+    }
+    .event_card{
+        background-color: var(--midnights-primary-10);
+        .countdown{
+            background-color: var(--midnights-primary-10);
+        }
+    }
+}
+/************* SPEAK NOW (TAYLOR'S VERSION) THEME *************/
+.speak_now_tv_theme{
+    background: var(--speak-now-tv-light-background);
+
+    h1, h2, h3, h4, h5, h6, p, select, button{
+        color: var(--speak-now-tv-primary);
+    }
+    svg{
+        color: var(--speak-now-tv-primary) !important;
+    }
+    .fan_made_banner, .footer_container{
+        background: var(--speak-now-tv-primary-10);
+        a{
+            color: var(--speak-now-tv-secondary);
+        }
+    }
+    .navbar_container{
+        background: var(--speak-now-tv-light-background); 
+
+        .logo h1{
+            background: var(--speak-now-tv-gradient, linear-gradient(90deg, #653870 0%, #AC64B3 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .link{
+            color: var(--speak-now-tv-primary);
+
+            &.router-link-active{
+                color: var(--speak-now-tv-secondary);
+            }
+        }
+    }
+
+    .page_title{
+        font-family: 'Meow Script', cursive;
+        background: var(--speak-now, linear-gradient(90deg, #653870 0%, #AC64B3 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .event_filter_button{
+        border: 1px solid var(--speak-now-tv-primary, #653870);
+        color: var(--speak-now-tv-primary, #653870);
+
+        &.is-active{
+            background: var(--speak-now-tv-gradient, linear-gradient(90deg, #653870 0%, #AC64B3 100%));
+            color: #FFFFFF;
+        }
+
+    }
+    .event_card{
+        background-color: var(--speak-now-tv-primary-10);
+        .countdown{
+            background-color: var(--speak-now-tv-primary-10);
+        }
+    }
+}
+
+/************* 1989 (TAYLOR'S VERSION) THEME *************/
+.nineteen_eighty_nine_tv_theme{
+    background: var(--1989-tv-light-background);
+
+    h1, h2, h3, h4, h5, h6, p, select, button{
+        color: var(--1989-tv-primary);
+    }
+    svg{
+        color: var(--1989-tv-primary) !important;
+    }
+    .fan_made_banner, .footer_container{
+        background: var(--1989-tv-primary-10);
+
+        a{
+            color: var(--1989-tv-secondary);
+        }
+    }
+    .navbar_container{
+        background: var(--1989-tv-light-background); 
+
+        .logo h1{
+            background: var(--1989-tv-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .link{
+            color: var(--1989-tv-primary);
+
+            &.router-link-active{
+                color: var(--1989-tv-secondary);
+            }
+        }
+    }
+
+    .page_title{
+        font-family: 'Permanent Marker', cursive;
+        background: var(--1989-tv-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .event_filter_button{
+        border: 1px solid var(--1989-tv-secondary,);
+        color: var(--1989-tv-primary);
+
+        &.is-active{
+            background: var(--1989-tv-gradient);
+            color: #FFFFFF;
+        }
+
+    }
+    .event_card{
+        background-color: var(--1989-tv-primary-10);
+        .countdown{
+            background-color: var(--1989-tv-primary-10);
+        }
+    }
+}
