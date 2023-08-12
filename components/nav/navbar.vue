@@ -32,6 +32,7 @@ const localePath = useLocalePath()
             line-height: normal;
             text-transform: uppercase;
             font-family: 'Cantarell', sans-serif;
+            white-space: nowrap;
         }
         .eras_tour_guide_logo_bottom{
             font-size: 27px;
@@ -40,6 +41,7 @@ const localePath = useLocalePath()
             line-height: normal;
             letter-spacing: -1.62px;
             font-family: 'Archivo Black', sans-serif;
+            white-space: nowrap;
 
         }
     }

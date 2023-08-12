@@ -12,5 +12,7 @@
     display:flex;
     justify-content: space-between;
     padding:40px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 </style>

@@ -2,7 +2,7 @@
     <div>
         <div class="flex_column gap_24">
             <h1 class="page_title">{{$t('events.title')}}</h1>
-            <div class="flex_row gap_12 h_center">
+            <div class="flex_row gap_12 h_center wrap">
                 <button @click="filter = 'All'" class="event_filter_button" :class="{'is-active': filter === 'All'}">{{$t('events.filters.all')}}</button>
                 <button @click="filter = 'Upcoming'" class="event_filter_button" :class="{'is-active': filter === 'Upcoming'}">{{$t('events.filters.upcoming')}}</button>
                 <button @click="filter = 'North America'" class="event_filter_button" :class="{'is-active': filter === 'North America'}">{{$t('events.filters.northAmerica')}}</button>
@@ -10,7 +10,6 @@
                 <button @click="filter = 'Europe'" class="event_filter_button" :class="{'is-active': filter === 'Europe'}">{{$t('events.filters.europe')}}</button>
                 <button @click="filter = 'Asia'" class="event_filter_button" :class="{'is-active': filter === 'Asia'}">{{$t('events.filters.asia')}}</button>
                 <button @click="filter = 'Oceania'" class="event_filter_button" :class="{'is-active': filter === 'Oceania'}">{{$t('events.filters.oceania')}}</button>
-                
             </div>
         
         <div class="events_grid">

@@ -88,4 +88,26 @@ grid-template-rows: 1fr;
 grid-column-gap: 16px;
 
 }
+
+@media screen and (max-width:650px){
+    .filters_grid{
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 2fr; 
+
+        div:first-child{
+            grid-row-start: 2;
+            
+        }
+        div:last-child{
+            grid-row-start: 2;
+            
+        }
+    }
+    .chant{
+        grid-column: 1 / span 2;
+        order: 1;
+        text-align: center;
+        width: 100%;
+    }
+}
 </style>
