@@ -7,6 +7,8 @@ export default defineNuxtConfig({
       title: "The Eras Tour Guide",
       meta: [
         { name: "description", content: "The Eras Tour Guide is a fan made site for other swifties to share information relating to Taylor Swift's The Eras Tour" },
+        { name: 'keywords', content: "Taylor Swift, The Eras Tour, Eras Tour, Swiftie, Chants, Eras Tour Chants, Eras Tour Dates, Eras Tour Set List, Eras Tour Bracelets, Taylor's Version, Fan made, Eras Tour USA, Eras Tour Canada, Eras Tour Australia, Eras Tour International Dates, Eras Tour US Dates, Eras Tour France, Eras Tour Mexico, Eras Tour Argentina, Eras Tour Brazil, Eras Tour Japan, Eras Tour Singapore, Eras Tour Sweden, Eras Tour Portugual, Eras Tour Spain, Eras Tour Scotland, Eras Tour Wales, Eras Tour UK, Eras Tour Europe, Eras Tour England, Eras Tour Ireland, Eras Tour Netherlands, Eras Tour Switzerland, Eras Tour Germany, Eras Tour Italy, Eras Tour Poland, Eras Tour Asia" },
+        { name: 'author', content: 'Elise'},
         {
           hid: "og:title",
           name: "title",

@@ -93,6 +93,7 @@ grid-column-gap: 16px;
     .filters_grid{
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 2fr; 
+        grid-row-gap: 8px;
 
         div:first-child{
             grid-row-start: 2;

@@ -10,7 +10,6 @@ const hidden = ref(false as boolean)
 <style lang="scss" scoped>
 .fan_made_banner{
     display: flex;
-    height: 48px;
     padding: 8px 16px;
     justify-content: space-between;
     align-items: center;
